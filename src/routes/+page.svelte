@@ -14,16 +14,16 @@
       pivotNumbers = [...pivotNumbers, numbers[randomIndex]];
       numbers.splice(randomIndex, 1);
     }
-		for (let i = 1; i <= 45; i++) {
-			let tmpNumbers = [...pivotNumbers];
-			if (tmpNumbers.includes(i)) {
-				continue;
-			}
-			tmpNumbers = [...tmpNumbers, i];
-			tmpNumbers = tmpNumbers.sort((a, b) => a - b);
-			console.log(tmpNumbers);
-			extractedNumbers = [...extractedNumbers, tmpNumbers];
-		}
+    for (let i = 1; i <= 45; i++) {
+      let tmpNumbers = [...pivotNumbers];
+      if (tmpNumbers.includes(i)) {
+        continue;
+      }
+      tmpNumbers = [...tmpNumbers, i];
+      tmpNumbers = tmpNumbers.sort((a, b) => a - b);
+      console.log(tmpNumbers);
+      extractedNumbers = [...extractedNumbers, tmpNumbers];
+    }
   }
 
   $locale = 'ko';
